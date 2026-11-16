@@ -1,0 +1,492 @@
+Fixed policy: 0:DOWN, 1:UP, 2:DOWN, 3:UP, 4:DOWN, 6:DOWN, 8:RIGHT, 9:RIGHT, 10:DOWN, 13:RIGHT, 14:RIGHT
+
+##### non-slippery / fixed / first #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action DOWN -> state 4, reward 0.0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 2: action DOWN -> state 8, reward 0.0
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+
+step 3: action RIGHT -> state 9, reward 0.0
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 4: action RIGHT -> state 10, reward 0.0
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 5: action DOWN -> state 14, reward 0.0
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 6: action RIGHT -> state 15, reward 1.0
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+##### non-slippery / fixed / success #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action DOWN -> state 4, reward 0.0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 2: action DOWN -> state 8, reward 0.0
+  (Down)
+SFFF
+FHFH
+[41mF[0mFFH
+HFFG
+
+step 3: action RIGHT -> state 9, reward 0.0
+  (Right)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 4: action RIGHT -> state 10, reward 0.0
+  (Right)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 5: action DOWN -> state 14, reward 0.0
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 6: action RIGHT -> state 15, reward 1.0
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+##### non-slippery / random / failure #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action UP -> state 0, reward 0.0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action RIGHT -> state 1, reward 0.0
+  (Right)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 3: action DOWN -> state 5, reward 0.0
+  (Down)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+##### non-slippery / random / first #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action UP -> state 0, reward 0.0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action RIGHT -> state 1, reward 0.0
+  (Right)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 3: action DOWN -> state 5, reward 0.0
+  (Down)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+##### slippery / fixed / failure #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 2: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 3: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 4: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 5: action DOWN -> state 6, reward 0.0
+  (Down)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 6: action DOWN -> state 10, reward 0.0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 7: action DOWN -> state 9, reward 0.0
+  (Down)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 8: action RIGHT -> state 5, reward 0.0
+  (Right)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+##### slippery / fixed / first #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 2: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 3: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 4: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 5: action DOWN -> state 6, reward 0.0
+  (Down)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 6: action DOWN -> state 10, reward 0.0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 7: action DOWN -> state 9, reward 0.0
+  (Down)
+SFFF
+FHFH
+F[41mF[0mFH
+HFFG
+
+step 8: action RIGHT -> state 5, reward 0.0
+  (Right)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+##### slippery / fixed / success #####
+episode_seed=11004
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action DOWN -> state 0, reward 0.0
+  (Down)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 3: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 4: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 5: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 6: action DOWN -> state 3, reward 0.0
+  (Down)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 7: action UP -> state 3, reward 0.0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 8: action UP -> state 3, reward 0.0
+  (Up)
+SFF[41mF[0m
+FHFH
+FFFH
+HFFG
+
+step 9: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 10: action DOWN -> state 1, reward 0.0
+  (Down)
+S[41mF[0mFF
+FHFH
+FFFH
+HFFG
+
+step 11: action UP -> state 2, reward 0.0
+  (Up)
+SF[41mF[0mF
+FHFH
+FFFH
+HFFG
+
+step 12: action DOWN -> state 6, reward 0.0
+  (Down)
+SFFF
+FH[41mF[0mH
+FFFH
+HFFG
+
+step 13: action DOWN -> state 10, reward 0.0
+  (Down)
+SFFF
+FHFH
+FF[41mF[0mH
+HFFG
+
+step 14: action DOWN -> state 14, reward 0.0
+  (Down)
+SFFF
+FHFH
+FFFH
+HF[41mF[0mG
+
+step 15: action RIGHT -> state 15, reward 1.0
+  (Right)
+SFFF
+FHFH
+FFFH
+HFF[41mG[0m
+
+
+##### slippery / random / failure #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action UP -> state 0, reward 0.0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action RIGHT -> state 4, reward 0.0
+  (Right)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 3: action DOWN -> state 4, reward 0.0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 4: action UP -> state 5, reward 0.0
+  (Up)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+##### slippery / random / first #####
+episode_seed=11000
+start state 0
+
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 1: action UP -> state 0, reward 0.0
+  (Up)
+[41mS[0mFFF
+FHFH
+FFFH
+HFFG
+
+step 2: action RIGHT -> state 4, reward 0.0
+  (Right)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 3: action DOWN -> state 4, reward 0.0
+  (Down)
+SFFF
+[41mF[0mHFH
+FFFH
+HFFG
+
+step 4: action UP -> state 5, reward 0.0
+  (Up)
+SFFF
+F[41mH[0mFH
+FFFH
+HFFG
+
+
+Outcomes NOT observed among the first 50 episodes of batch 11 (no trace saved): [('non-slippery', 'random', 'success'), ('non-slippery', 'fixed', 'failure'), ('slippery', 'random', 'success')]
